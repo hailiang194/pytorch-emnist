@@ -21,6 +21,6 @@ class EMNISTDataset(Dataset):
         return len(self.__label)
 
 if __name__ == '__main__':
-    dataset = EMNISTDataset('./train.csv')
-    data, label = dataset[3]
+    dataset = EMNISTDataset('./test.csv')
+    data, label = dataset[1]
     print(label)
